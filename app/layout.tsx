@@ -23,12 +23,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script src="/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
+        <script src="/libs/tobii/js/tobii.min.js"></script>
+        <script src="/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="/libs/feather-icons/feather.min.js"></script>
+        <script src="/js/plugins.init.js"></script>
+        <script src="/js/app.js"></script>
       </body>
+      
     </html>
   );
 }
