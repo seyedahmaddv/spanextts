@@ -13,7 +13,7 @@ export default function ContactForm() {
   const [error, setError] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -34,7 +34,7 @@ export default function ContactForm() {
     return true;
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     if (validateForm()) {
       // ارسال فرم (می‌توانید از fetch یا axios استفاده کنید)
@@ -58,7 +58,7 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
             <div className="lg:col-span-8">
               <div className="p-6 rounded-md shadow bg-white dark:bg-black">
-                <form onSubmit={handleSubmit}>
+                <form >
                   {error && <p className="text-red-500 mb-4">{error}</p>}
                   {successMsg && <p className="text-green-500 mb-4">{successMsg}</p>}
                   <div className="grid lg:grid-cols-12 lg:gap-6">
@@ -100,7 +100,7 @@ export default function ContactForm() {
                         className="form-input textarea h-28"
                         placeholder="پیام :"
                         value={formData.comments}
-                        onChange={handleChange}
+                        
                       ></textarea>
                     </div>
                   </div>

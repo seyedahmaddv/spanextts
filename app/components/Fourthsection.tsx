@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image';
 
 export default function Fourthsection() {
   return (
@@ -14,7 +14,7 @@ export default function Fourthsection() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/1.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/1.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -30,7 +30,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/2.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/2.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -46,7 +46,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/3.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/3.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -62,7 +62,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/4.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/4.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -78,7 +78,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/5.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/5.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -94,7 +94,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/6.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/6.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -110,7 +110,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/7.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/7.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -126,7 +126,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-sm overflow-hidden group">
-                        <img src="assets/images/portfolio/8.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
+                        <Image src="assets/images/portfolio/8.jpg" className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-50 transition duration-500 z-0"></div>
 
                         <div className="content">
@@ -175,7 +175,7 @@ export default function Fourthsection() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
                     <div className="relative rounded-md shadow-lg overflow-hidden group">
-                        <img src="assets/images/client/01.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
+                        <Image src="assets/images/client/01.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-30 z-0"></div>
                         <ul className="list-none absolute z-10 hidden group-hover:block top-4 right-4 mb-0">
                             <li className="mb-1"><a href="javascript:void(0)" className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white btn-icon btn-sm rounded-full"><i className="uil uil-facebook-f"></i></a></li>
@@ -190,7 +190,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-lg overflow-hidden group">
-                        <img src="assets/images/client/02.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
+                        <Image src="assets/images/client/02.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-30 z-0"></div>
                         <ul className="list-none absolute z-10 hidden group-hover:block top-4 right-4 mb-0">
                             <li className="mb-1"><a href="javascript:void(0)" className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white btn-icon btn-sm rounded-full"><i className="uil uil-facebook-f"></i></a></li>
@@ -205,7 +205,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-lg overflow-hidden group">
-                        <img src="assets/images/client/03.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
+                        <Image src="assets/images/client/03.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-30 z-0"></div>
                         <ul className="list-none absolute z-10 hidden group-hover:block top-4 right-4 mb-0">
                             <li className="mb-1"><a href="javascript:void(0)" className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white btn-icon btn-sm rounded-full"><i className="uil uil-facebook-f"></i></a></li>
@@ -220,7 +220,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="relative rounded-md shadow-lg overflow-hidden group">
-                        <img src="assets/images/client/04.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
+                        <Image src="assets/images/client/04.jpg" className="group-hover:origin-center group-hover:scale-105 transition duration-500" alt=""/>
                         <div className="absolute inset-0 group-hover:bg-black opacity-30 z-0"></div>
                         <ul className="list-none absolute z-10 hidden group-hover:block top-4 right-4 mb-0">
                             <li className="mb-1"><a href="javascript:void(0)" className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white btn-icon btn-sm rounded-full"><i className="uil uil-facebook-f"></i></a></li>
@@ -263,27 +263,27 @@ export default function Fourthsection() {
             <div className="container mt-12">
                 <div className="grid md:grid-cols-6 grid-cols-2 justify-center gap-8">
                     <div className="mx-auto">
-                        <img src="assets/images/client/amazon.svg" className="h-[25px]" alt=""/>
+                        <Image src="assets/images/client/amazon.svg" className="h-[25px]" alt=""/>
                     </div>
 
                     <div className="mx-auto">
-                        <img src="assets/images/client/google.svg" className="h-[25px]" alt=""/>
+                        <Image src="assets/images/client/google.svg" className="h-[25px]" alt=""/>
                     </div>
                     
                     <div className="mx-auto">
-                        <img src="assets/images/client/lenovo.svg" className="h-[25px]" alt=""/>
+                        <Image src="assets/images/client/lenovo.svg" className="h-[25px]" alt=""/>
                     </div>
                     
                     <div className="mx-auto">
-                        <img src="assets/images/client/paypal.svg" className="h-[25px]" alt=""/>
+                        <Image src="assets/images/client/paypal.svg" className="h-[25px]" alt=""/>
                     </div>
                     
                     <div className="mx-auto">
-                        <img src="assets/images/client/shopify.svg" className="h-[25px]" alt=""/>
+                        <Image src="assets/images/client/shopify.svg" className="h-[25px]" alt=""/>
                     </div>
                     
                     <div className="mx-auto">
-                        <img src="assets/images/client/spotify.svg" className="h-[25px]" alt=""/>
+                        <Image src="assets/images/client/spotify.svg" className="h-[25px]" alt=""/>
                     </div>
                 </div>
             </div>
@@ -302,7 +302,7 @@ export default function Fourthsection() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mt-8">
                     <div className="blog relative rounded-md shadow shadow-slate-200 dark:shadow-slate-800 overflow-hidden">
-                        <img src="assets/images/blog/1.jpg" alt=""/>
+                        <Image src="assets/images/blog/1.jpg" alt=""/>
 
                         <div className="content p-6">
                             <a href="" className="text-lg hover:text-orange-600 dark:text-white dark:hover:text-orange-600 transition-all duration-500 ease-in-out font-medium">هویت سازمانی خود را با سیداحمد بسازید</a>
@@ -315,7 +315,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="blog relative rounded-md shadow shadow-slate-200 dark:shadow-slate-800 overflow-hidden">
-                        <img src="assets/images/blog/2.jpg" alt=""/>
+                        <Image src="assets/images/blog/2.jpg" alt=""/>
 
                         <div className="content p-6">
                             <a href="" className="text-lg hover:text-orange-600 dark:text-black dark:hover:text-orange-600 transition-all duration-500 ease-in-out font-medium">دست راست دنیای فناوری اطلاعات کسب و کار</a>
@@ -328,7 +328,7 @@ export default function Fourthsection() {
                     </div>
 
                     <div className="blog relative rounded-md shadow shadow-slate-200 dark:shadow-slate-800 overflow-hidden">
-                        <img src="assets/images/blog/3.jpg" alt=""/>
+                        <Image src="assets/images/blog/3.jpg" alt=""/>
 
                         <div className="content p-6">
                             <a href="" className="text-lg hover:text-orange-600 dark:text-black dark:hover:text-orange-600 transition-all duration-500 ease-in-out font-medium">هویت سازمانی خود را از سیداحمد بسازید</a>
