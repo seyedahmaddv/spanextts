@@ -13,7 +13,9 @@ export default function ContactForm() {
   const [error, setError] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -34,7 +36,7 @@ export default function ContactForm() {
     return true;
   };
 
-  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
       // ارسال فرم (می‌توانید از fetch یا axios استفاده کنید)
@@ -51,14 +53,14 @@ export default function ContactForm() {
             <h6 className="text-orange-600 text-base font-medium uppercase mb-2">فرم تماس</h6>
             <h3 className="mb-4 md:text-2xl text-xl font-medium dark:text-white">تماس بگیرید !</h3>
             <p className="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">
-            کارزار خود را راه‌اندازی کنید و از تخصص ما در طراحی و مدیریت صفحات خدمات طراحی سایت سید احمد متمرکز بر تبدیل، با استفاده از تیلویند بهره‌مند شوید.
+              کارزار خود را راه‌اندازی کنید و از تخصص ما در طراحی و مدیریت صفحات خدمات طراحی سایت سید احمد متمرکز بر تبدیل، با استفاده از تیلویند بهره‌مند شوید.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
             <div className="lg:col-span-8">
               <div className="p-6 rounded-md shadow bg-white dark:bg-black">
-                <form >
+                <form onSubmit={handleSubmit}>
                   {error && <p className="text-red-500 mb-4">{error}</p>}
                   {successMsg && <p className="text-green-500 mb-4">{successMsg}</p>}
                   <div className="grid lg:grid-cols-12 lg:gap-6">
@@ -100,7 +102,7 @@ export default function ContactForm() {
                         className="form-input textarea h-28"
                         placeholder="پیام :"
                         value={formData.comments}
-                        
+                        onChange={handleChange}
                       ></textarea>
                     </div>
                   </div>

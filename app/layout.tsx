@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script"; // اضافه کردن کامپوننت Script
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,14 +29,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <script src="/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
-        <script src="/libs/tobii/js/tobii.min.js"></script>
-        <script src="/libs/tiny-slider/min/tiny-slider.js"></script>
-        <script src="/libs/feather-icons/feather.min.js"></script>
-        <script src="/js/plugins.init.js"></script>
-        <script src="/js/app.js"></script>
+        {/* بارگذاری اسکریپت‌ها به صورت ناهمزمان */}
+        <Script src="/libs/gumshoejs/gumshoe.polyfills.min.js" strategy="lazyOnload" />
+        <Script src="/libs/tobii/js/tobii.min.js" strategy="lazyOnload" />
+        <Script src="/libs/tiny-slider/min/tiny-slider.js" strategy="lazyOnload" />
+        <Script src="/libs/feather-icons/feather.min.js" strategy="lazyOnload" />
+        <Script src="/js/plugins.init.js" strategy="lazyOnload" />
+        <Script src="/js/app.js" strategy="lazyOnload" />
       </body>
-      
     </html>
   );
 }
